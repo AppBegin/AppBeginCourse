@@ -1,0 +1,6 @@
+framework module AppBeginCourse {
+  umbrella header "AppBeginCourse.h"
+
+  export *
+  module * { export * }
+}
