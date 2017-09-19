@@ -35,4 +35,6 @@
                   onSuccess:(ABArraySuccessBlock)successBlock
                   onFailure:(ABFailureBlock)failureBlock;
 
+- (void)testGitHub;
+
 @end
