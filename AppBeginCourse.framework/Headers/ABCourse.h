@@ -36,6 +36,13 @@
  *
  *
  */
-+ (void)setConfigHost:(NSString *)host;
++ (void)setBaseURL:(NSString *)url;
+
+/**
+ *  get  Key
+ *
+ *  @return Client Key
+ */
++ (NSString *)baseUrl;
 
 @end

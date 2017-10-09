@@ -41,12 +41,12 @@
                 onSuccess:(ABObjectSuccessBlock)successBlock
                 onFailure:(ABFailureBlock)failureBlock;
 
-/**
- *
- *获取全部课程
- */
-- (void)getCourseAllListOnSuccess:(ABArraySuccessBlock)successBlock
-                        onFailure:(ABFailureBlock)failureBlock;
+///**
+// *
+// *获取全部课程
+// */
+//- (void)getCourseAllListOnSuccess:(ABArraySuccessBlock)successBlock
+//                        onFailure:(ABFailureBlock)failureBlock;
 
 /**
  *
@@ -67,12 +67,13 @@
 
 /**
  *
- *You can use the limit and skip parameters for pagination.limit defaults to 100. In the old Parse hosted backend, the maximum limit was 1,000, but Parse Server removed that constraint. Thus, to retrieve 200 objects after skipping the first 400:
+ *搜索课程
  *
  */
-- (void)getCourseListWithSkip:(NSInteger)skip
-                        limit:(NSInteger)limit
-                    onSuccess:(ABArraySuccessBlock)successBlock
-                    onFailure:(ABFailureBlock)failureBlock;
+- (void)getCourseListByParam:(NSDictionary *)param
+                        page:(NSInteger)page
+                    pageSize:(NSInteger)pageSize
+                   onSuccess:(ABArraySuccessBlock)successBlock
+                   onFailure:(ABFailureBlock)failureBlock;
 
 @end

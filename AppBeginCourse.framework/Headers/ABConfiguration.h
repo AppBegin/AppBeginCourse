@@ -14,7 +14,7 @@
 
 @property (nonatomic, copy, readonly) NSString *applicationId;
 @property (nonatomic, copy, readonly) NSString *applicationKey;
-//sdk域名，默认域名为@""
-@property (nonatomic, strong) NSString *baseUrl;
+//设定服务器url(包含版本号)
+@property (nonatomic, copy, readonly) NSString *baseUrl;
 
 @end

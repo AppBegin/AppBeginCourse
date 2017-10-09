@@ -10,5 +10,6 @@
 
 @property (nonatomic, copy, readwrite) NSString *applicationId;
 @property (nonatomic, copy, readwrite) NSString *applicationKey;
+@property (nonatomic, copy, readwrite) NSString *baseUrl;
 
 @end

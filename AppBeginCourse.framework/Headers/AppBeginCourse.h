@@ -15,5 +15,5 @@ FOUNDATION_EXPORT double AppBeginCourseVersionNumber;
 FOUNDATION_EXPORT const unsigned char AppBeginCourseVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <AppBeginCourse/PublicHeader.h>
-
+#import "ABCourse.h"
 #import "ABCourseManager.h"
