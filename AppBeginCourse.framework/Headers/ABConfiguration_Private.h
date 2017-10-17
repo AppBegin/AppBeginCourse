@@ -12,4 +12,6 @@
 @property (nonatomic, copy, readwrite) NSString *applicationKey;
 @property (nonatomic, copy, readwrite) NSString *baseUrl;
 
+@property (nonatomic, copy, readwrite) NSString *accessToken;
+@property (nonatomic, copy, readwrite) NSString *tokenType;
 @end

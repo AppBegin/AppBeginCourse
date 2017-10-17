@@ -17,6 +17,8 @@
  */
 + (void)setApplicationId:(NSString *)applicationId clientKey:(NSString *)clientKey;
 
++ (void)setAccessToken:(NSString *)accessToken tokenType:(NSString *)tokenType;
+
 /**
  *  get Application Id
  *

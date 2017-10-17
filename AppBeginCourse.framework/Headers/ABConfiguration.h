@@ -17,4 +17,6 @@
 //设定服务器url(包含版本号)
 @property (nonatomic, copy, readonly) NSString *baseUrl;
 
+@property (nonatomic, copy, readonly) NSString *accessToken;
+@property (nonatomic, copy, readonly) NSString *tokenType;
 @end

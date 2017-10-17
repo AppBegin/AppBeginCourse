@@ -23,15 +23,15 @@
  */
 - (NSString *)coursewareUrl:(NSInteger)coursewareId;
 
-/**
- *
- *创建课程
- */
-- (void)createCourseWithCourseId:(NSString *)courseId
-                     coursetitle:(NSString *)courseTitle
-               coursedescription:(NSString *)courseDesc
-                       onSuccess:(ABSuccessBlock)successBlock
-                       onFailure:(ABFailureBlock)failureBlock;
+///**
+// *
+// *创建课程
+// */
+//- (void)createCourseWithCourseId:(NSString *)courseId
+//                     coursetitle:(NSString *)courseTitle
+//               coursedescription:(NSString *)courseDesc
+//                       onSuccess:(ABSuccessBlock)successBlock
+//                       onFailure:(ABFailureBlock)failureBlock;
 
 /**
  *
