@@ -23,16 +23,6 @@
  */
 - (NSString *)coursewareUrl:(NSInteger)coursewareId;
 
-///**
-// *
-// *创建课程
-// */
-//- (void)createCourseWithCourseId:(NSString *)courseId
-//                     coursetitle:(NSString *)courseTitle
-//               coursedescription:(NSString *)courseDesc
-//                       onSuccess:(ABSuccessBlock)successBlock
-//                       onFailure:(ABFailureBlock)failureBlock;
-
 /**
  *
  *根据CourseId获取单个课程
@@ -41,39 +31,67 @@
                 onSuccess:(ABObjectSuccessBlock)successBlock
                 onFailure:(ABFailureBlock)failureBlock;
 
-///**
-// *
-// *获取全部课程
-// */
-//- (void)getCourseAllListOnSuccess:(ABArraySuccessBlock)successBlock
-//                        onFailure:(ABFailureBlock)failureBlock;
-
-/**
- *
- *搜索课程
- *param类型
- */
-- (void)searchCourseByParam:(NSDictionary *)param
-                  OnSuccess:(ABArraySuccessBlock)successBlock
-                  onFailure:(ABFailureBlock)failureBlock;
-
 /**
  *
  *获取课程的所有课件
  */
-- (void)getCoursewareByCourseId:(NSInteger)courseId
-                      onSuccess:(ABArraySuccessBlock)successBlock
-                      onFailure:(ABFailureBlock)failureBlock;
+- (void)getCoursewaresByCourseId:(NSInteger)courseId
+                       onSuccess:(ABArraySuccessBlock)successBlock
+                       onFailure:(ABFailureBlock)failureBlock;
 
 /**
  *
  *搜索课程
  *
  */
-- (void)getCourseListByParam:(NSDictionary *)param
-                        page:(NSInteger)page
+- (void)getCoursesByParam:(NSDictionary *)param
+                     page:(NSInteger)page
+                 pageSize:(NSInteger)pageSize
+                onSuccess:(ABArraySuccessBlock)successBlock
+                onFailure:(ABFailureBlock)failureBlock;
+/**
+ *
+ *推荐课程
+ *
+ */
+- (void)getRecommendCourses:(NSInteger)page
+                   pageSize:(NSInteger)pageSize
+                  onSuccess:(ABArraySuccessBlock)successBlock
+                  onFailure:(ABFailureBlock)failureBlock;
+/**
+ *
+ *收藏课程
+ *
+ */
+- (void)getMyFavoriteCourses:(NSInteger)page
                     pageSize:(NSInteger)pageSize
                    onSuccess:(ABArraySuccessBlock)successBlock
+                   onFailure:(ABFailureBlock)failureBlock;
+/**
+ *
+ *我的课程
+ *
+ */
+- (void)getMyCourses:(NSInteger)page
+            pageSize:(NSInteger)pageSize
+           onSuccess:(ABArraySuccessBlock)successBlock
+           onFailure:(ABFailureBlock)failureBlock;
+/**
+ *
+ *添加收藏课程
+ *
+ */
+- (void)addFavoriteCourse:(NSInteger)courseId
+                onSuccess:(ABSuccessBlock)successBlock
+                onFailure:(ABFailureBlock)failureBlock;
+
+/**
+ *
+ *取消收藏课程
+ *
+ */
+- (void)cancelFavoriteCourse:(NSInteger)courseId
+                   onSuccess:(ABSuccessBlock)successBlock
                    onFailure:(ABFailureBlock)failureBlock;
 
 @end

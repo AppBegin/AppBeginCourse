@@ -19,4 +19,5 @@
 
 @property (nonatomic, copy, readonly) NSString *accessToken;
 @property (nonatomic, copy, readonly) NSString *tokenType;
+@property (nonatomic, assign, readonly) NSTimeInterval expired;
 @end
